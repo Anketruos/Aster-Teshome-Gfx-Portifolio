@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aster Teshome | Graphics Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">✦ Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html" class="active-link">Work</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">✦ Junior Graphic Designer</div>
+      <h1 class="hero-title">
+        Crafting visuals<br />
+        that <span class="accent">speak</span> loud.
+      </h1>
+      <p class="hero-sub">Bold. Intentional. Unforgettable design work spanning faith, community, and personal expression.</p>
+      <div class="hero-cta">
+        <a href="#categories" class="btn-primary">View My Work</a>
+        <span class="scroll-hint">↓ scroll to explore</span>
+      </div>
+    </div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </section>
+
+  <!-- ═══════════════ CATEGORY CARDS ═══════════════ -->
+  <section class="categories" id="categories">
+    <div class="categories-inner">
+      <div class="section-label">— Selected Work</div>
+      <h2 class="section-title">Browse by <span class="accent">category</span></h2>
+
+      <div class="cards-grid">
+
+        <!-- CARD 1 — Christian Fellowship -->
+        <a href="pages/christianfellowship.html" class="cat-card">
+          <div class="cat-card-gfx gfx-1">
+            <div class="card-orb card-orb-1"></div>
+            <div class="card-icon-wrap"><span class="card-icon">✝</span></div>
+            <div class="card-lines">
+              <div class="cline"></div><div class="cline"></div><div class="cline"></div>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-num">01</div>
+            <h3 class="cat-title">Christian Fellowship</h3>
+            <p class="cat-subtitle">Verses &amp; Posters</p>
+            <p class="cat-desc">Faith-driven visuals — scripture typography, event posters, and devotional graphics crafted for the community.</p>
+            <div class="cat-footer">
+              <span class="cat-count">17 pieces</span>
+              <span class="cat-arrow">Explore →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 2 — SheCodes AASTU -->
+        <a href="pages/shecodes.html" class="cat-card cat-card--mid">
+          <div class="cat-card-gfx gfx-2">
+            <div class="card-orb card-orb-2"></div>
+            <div class="card-icon-wrap"><span class="card-icon">⟡</span></div>
+            <div class="card-lines">
+              <div class="cline"></div><div class="cline"></div><div class="cline"></div>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-num">02</div>
+            <h3 class="cat-title">SheCodes AASTU</h3>
+            <p class="cat-subtitle">Posters</p>
+            <p class="cat-desc">Event branding, workshop posters, and social media graphics created for the SheCodes community at AASTU.</p>
+            <div class="cat-footer">
+              <span class="cat-count">7 pieces</span>
+              <span class="cat-arrow">Explore →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 3 — Personal Projects -->
+        <a href="pages/personal.html" class="cat-card">
+          <div class="cat-card-gfx gfx-3">
+            <div class="card-orb card-orb-3"></div>
+            <div class="card-icon-wrap"><span class="card-icon">◈</span></div>
+            <div class="card-lines">
+              <div class="cline"></div><div class="cline"></div><div class="cline"></div>
+            </div>
+          </div>
+          <div class="cat-card-body">
+            <div class="cat-num">03</div>
+            <h3 class="cat-title">Personal Projects</h3>
+            <p class="cat-subtitle">Experiments &amp; Explorations</p>
+            <p class="cat-desc">Experimental designs, personal branding concepts, and creative side projects born from pure curiosity.</p>
+            <div class="cat-footer">
+              <span class="cat-count">1 piece</span>
+              <span class="cat-arrow">Explore →</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <span>✦ Portfolio — 2026</span>
+    <span>Designed with intention.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

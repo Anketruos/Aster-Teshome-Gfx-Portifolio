@@ -1,0 +1,21 @@
+/* ===================================================
+   PERSONAL PROJECTS — Page-specific overrides
+   Base styles from ../style.css
+=================================================== */
+
+.detail-header.dh-personal {
+  background: linear-gradient(160deg, #3a2a2c 0%, #261a1c 35%, #1a1214 100%);
+}
+
+.detail-orb-3 {
+  background: radial-gradient(circle, rgba(226, 194, 179, 0.18), transparent 70%);
+}
+
+.detail-icon {
+  filter: drop-shadow(0 0 28px rgba(226, 194, 179, 0.5));
+}
+
+.project-card:hover {
+  border-color: rgba(226, 194, 179, 0.38);
+  box-shadow: 0 20px 55px rgba(64, 50, 52, 0.5), 0 0 0 1px rgba(226, 194, 179, 0.12);
+}

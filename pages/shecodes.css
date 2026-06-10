@@ -1,0 +1,21 @@
+/* ===================================================
+   SHECODES AASTU — Page-specific overrides
+   Base styles from ../style.css
+=================================================== */
+
+.detail-header.dh-shecodes {
+  background: linear-gradient(160deg, #403234 0%, #2e2022 35%, #1a1214 100%);
+}
+
+.detail-orb-2 {
+  background: radial-gradient(circle, rgba(104, 116, 119, 0.35), transparent 70%);
+}
+
+.detail-icon {
+  filter: drop-shadow(0 0 28px rgba(104, 116, 119, 0.6));
+}
+
+.project-card:hover {
+  border-color: rgba(104, 116, 119, 0.45);
+  box-shadow: 0 20px 55px rgba(64, 50, 52, 0.5), 0 0 0 1px rgba(104, 116, 119, 0.18);
+}
