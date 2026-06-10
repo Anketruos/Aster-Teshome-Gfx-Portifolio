@@ -4,7 +4,7 @@
 
 const projects = [
   {
-    img: '../images/F1 general program.jpg',
+    img: '../images/F1 general program.png',
     type: 'Event Program',
     name: 'General Program — Vol. 1',
     blurb: 'Fellowship general program poster featuring the schedule, theme, and community spirit.',

@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Portfolio</title>
+  <link rel="icon" type="image/png" href="../images/Favicon.png" />
+  <link rel="apple-touch-icon" href="../images/Favicon.png" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,25 +56,22 @@
         </div>
 
         <div class="contact-right">
-          <form class="contact-form" id="contactForm">
+          <div id="formStatus"></div>
+          <form class="contact-form" id="contact-form">
             <div class="form-group">
               <label class="form-label">Your name</label>
-              <input type="text" id="senderName" class="form-input" placeholder="e.g. Selam Tesfaye" required />
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Selam Tesfaye" required />
             </div>
             <div class="form-group">
               <label class="form-label">Your email</label>
-              <input type="email" id="senderEmail" class="form-input" placeholder="you@example.com" required />
+              <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required />
             </div>
             <div class="form-group">
               <label class="form-label">Message</label>
-              <textarea id="senderMessage" class="form-input form-textarea" placeholder="Tell me about your project…" required></textarea>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project…" required></textarea>
             </div>
             <button type="submit" class="btn-primary btn-full">Send Message →</button>
           </form>
-          <div class="form-success" id="formSuccess">
-            ✦ Opening your email app…<br />
-            <span style="font-size:0.85rem;color:var(--muted)">Your message is pre-filled and ready to send.</span>
-          </div>
         </div>
       </div>
     </div>
@@ -87,24 +86,40 @@
 
   <script src="../app.js"></script>
   <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const form   = document.getElementById('contact-form');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
-      const name    = document.getElementById('senderName').value.trim();
-      const email   = document.getElementById('senderEmail').value.trim();
-      const message = document.getElementById('senderMessage').value.trim();
 
-      const subject = encodeURIComponent('Portfolio Enquiry from ' + name);
-      const body    = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n\n' +
-        message
-      );
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.textContent = 'Sending…';
+      submitBtn.disabled = true;
 
-      window.location.href = 'mailto:anketeshome@gmail.com?subject=' + subject + '&body=' + body;
+      const formData = new FormData(form);
 
-      // Show success state
-      document.getElementById('contactForm').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
+      try {
+        const response = await fetch('https://formspree.io/f/xpqelkwe', {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' }
+        });
+
+        if (response.ok) {
+          status.innerHTML = '<div class="form-success" style="display:block;">✦ Message sent successfully!<br /><span style="font-size:0.85rem;color:var(--muted)">I\'ll get back to you soon.</span></div>';
+          form.reset();
+          submitBtn.textContent = 'Send Message →';
+          submitBtn.disabled = false;
+        } else {
+          status.innerHTML = '<div class="form-success" style="display:block;border-color:rgba(255,100,100,0.3);color:#f08080;">❌ Something went wrong. Please try again.</div>';
+          submitBtn.textContent = 'Send Message →';
+          submitBtn.disabled = false;
+        }
+      } catch (error) {
+        status.innerHTML = '<div class="form-success" style="display:block;border-color:rgba(255,100,100,0.3);color:#f08080;">❌ Network error. Please try again later.</div>';
+        submitBtn.textContent = 'Send Message →';
+        submitBtn.disabled = false;
+      }
     });
   </script>
 </body>
