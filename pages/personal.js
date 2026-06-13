@@ -4,7 +4,7 @@
 
 const projects = [
   {
-    img: '../images/P1 belt of truth worked on it based on benaiah ministry.jpg',
+    img: '../images/P1 belt of truth worked on it based on benaiah ministry.webp',
     type: 'Ministry Graphic',
     name: 'Belt of Truth — Benaiah Ministry',
     blurb: 'A personal piece exploring the Armor of God, created in connection with Benaiah Ministry.',

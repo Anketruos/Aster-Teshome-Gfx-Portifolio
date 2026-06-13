@@ -4,7 +4,7 @@
 
 const projects = [
   {
-    img: '../images/S1 ada lovalence first female programer made to inspire girls for the club.jpg',
+    img: '../images/S1 ada lovalence first female programer made to inspire girls for the club.webp',
     type: 'Inspirational Poster',
     name: 'Ada Lovelace — First Female Programmer',
     blurb: 'A tribute poster to Ada Lovelace, designed to inspire girls to join and believe in the SheCodes club.',
@@ -12,7 +12,7 @@ const projects = [
     detail: 'Designed to inspire. This poster celebrates Ada Lovelace — the world\'s first computer programmer — as a symbol of what women can achieve in technology. Created specifically to motivate girls to join the SheCodes AASTU club, the design balances historical reverence with a modern, bold visual identity.'
   },
   {
-    img: '../images/S2 make for the she codes problem solving week.jpg',
+    img: '../images/S2 make for the she codes problem solving week.webp',
     type: 'Event Poster',
     name: 'Problem Solving Week',
     blurb: 'A bold poster created for the SheCodes AASTU problem-solving week event.',
@@ -20,7 +20,7 @@ const projects = [
     detail: 'Built for SheCodes\' problem-solving week, this poster channels the spirit of analytical thinking and creative challenge. The design is sharp and direct — communicating the technical energy of the event while keeping the brand warm and empowering for its audience.'
   },
   {
-    img: '../images/S3 made to celebrate the 100 new followers of shecodes telegram channel.jpg',
+    img: '../images/S3 made to celebrate the 100 new followers of shecodes telegram channel.webp',
     type: 'Milestone Graphic',
     name: '100 Followers Milestone',
     blurb: 'Celebratory graphic marking 100 new followers on the SheCodes AASTU Telegram channel.',
@@ -28,7 +28,7 @@ const projects = [
     detail: 'A community celebration graphic marking a significant growth milestone — 100 new followers on the SheCodes AASTU Telegram channel. Energetic, celebratory, and shareable. Designed to feel like a party in poster form — because every milestone deserves recognition.'
   },
   {
-    img: '../images/S4 made to motivate and cheris the girls that are learning int he club this is for the star of the week.jpg',
+    img: '../images/S4 made to motivate and cheris the girls that are learning int he club this is for the star of the week.webp',
     type: 'Recognition Graphic',
     name: 'Star of the Week',
     blurb: 'Weekly recognition graphic celebrating a standout member of the SheCodes AASTU club.',
@@ -36,7 +36,7 @@ const projects = [
     detail: 'The Star of the Week series is designed to do one thing: make someone feel genuinely celebrated. Each week a club member is highlighted with this graphic — warm, personal, and visually joyful. Designed to motivate and cherish the girls who are putting in the work to learn and grow.'
   },
   {
-    img: '../images/S5 this is made to say happy holiday saying happy easter to the memeber of shecode.jpg',
+    img: '../images/S5 this is made to say happy holiday saying happy easter to the memeber of shecode.webp',
     type: 'Holiday Greeting',
     name: 'Happy Easter — SheCodes',
     blurb: 'A warm Easter greeting graphic sent to SheCodes AASTU members.',
@@ -44,7 +44,7 @@ const projects = [
     detail: 'A holiday greeting graphic designed to wish SheCodes AASTU members a happy Easter. Warm, friendly, and community-focused — the design prioritizes connection over formality, reminding members that the club sees and appreciates them beyond just the learning environment.'
   },
   {
-    img: '../images/S6 this is made for the final program poster of the shecode closing ceremony.png',
+    img: '../images/S6 this is made for the final program poster of the shecode closing ceremony.webp',
     type: 'Closing Ceremony',
     name: 'SheCodes Closing Ceremony — Program',
     blurb: 'Official program poster for the SheCodes AASTU closing ceremony.',
@@ -52,7 +52,7 @@ const projects = [
     detail: 'The official program poster for the SheCodes AASTU closing ceremony. This piece marks the end of a chapter — designed to feel commemorative and celebratory. Clear structure, strong branding, and a tone that honors the hard work every member put into the year.'
   },
   {
-    img: '../images/S7 thisis the closing banner made for the shecodes closing ceremony.png',
+    img: '../images/S7 thisis the closing banner made for the shecodes closing ceremony.webp',
     type: 'Event Banner',
     name: 'SheCodes Closing Ceremony — Banner',
     blurb: 'Large-format closing ceremony banner for the SheCodes AASTU end-of-year event.',
